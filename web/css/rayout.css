@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+ul, li {
+    list-style: none;
+}
+
+.container {
+    width: 60%;
+    margin: auto;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+header h1 {
+    align-self: flex-start;
+}
+
+ul {
+    display: flex;
+}
+
+.menu1 > li {
+    font-size: 12px;
+}
+
+li {
+    padding: 6px 12px;
+    transition: .5s;
+    border: 1px solid #000;
+    border-left: none;
+}
+
+li:first-child {
+    border-radius: 10px 0 0 10px;
+    border-left: 1px solid #000;
+}
+
+li:last-child {
+    border-radius: 0 10px 10px 0;
+}
+
+li:hover {
+    background-color: #000;
+}
+
+li:hover a {
+    color: #fff;
+}
+
+section {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.mainArticle {
+    width: 80%;
+}
+
+.article {
+    border: 1px solid #000;
+    margin-bottom: 10px;
+    padding: 12px;
+}
+
+.article span {
+    font-weight: bold;
+    font-size: 17px;
+}
+
+.side {
+    width: 19%;
+}
+
+.side input {
+    display: none;
+}
+
+.side label {
+    text-align: center;
+    border: 1px solid #000;
+    padding: 6px 12px;
+    display: inline-block;
+    cursor: pointer;
+    width: 50%;
+}
+
+.side > div {display: none;}
+
+.side #tab1:checked + label,
+.side #tab2:checked + label {background-color: #000; color: #fff;}
+
+.side #tab1:checked ~ .tabmenu1,
+.side #tab2:checked ~ .tabmenu2 {display: block;}
+
+.menuItem {
+    border: 1px solid #000;
+    border-top: none;
+    display: flex;
+    padding: 10px;
+}
+
+.menuItem .text {
+    margin-left: 5px;
+    white-space: nowrap;
+}
+
+footer {
+    padding: 5px 0;
+    border: 1px solid #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer p {text-align: center;}
+
+footer span {
+    font-size: 20px;
+}

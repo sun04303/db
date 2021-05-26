@@ -1,0 +1,185 @@
+@charset "UTF-8";
+
+/* 초기화 */
+
+* {
+    padding: 0;
+    margin: 0;
+    color: #222328;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul, li {
+    list-style: none;
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+/* 헤더 */
+
+header {
+    height: 100px;
+    display: flex;
+    padding: 0 15px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* 메뉴 */
+
+nav {
+    width: 60%;
+}
+
+nav a {
+    line-height: 53px;
+    height: 100%;
+    display: block;
+    transition: .5s;
+}
+
+nav a:hover {
+    color: #fff;
+    background-color: #5383e8;
+}
+
+nav ul {
+    width: 100%;
+    display: flex;
+}
+
+nav li {
+    width: 25%;
+    height: 53px;
+    text-align: center;
+    border: 1px solid #000;
+}
+
+/* 비주얼 */
+
+.visual {
+    overflow: hidden;
+}
+
+.visual ul {
+    width: clac(100%*3);
+    display: flex;
+    animation: slide 9s infinite;
+}
+
+@keyframes slide {
+    0% {margin-left:0;}
+    17.5% {margin-left:0;}
+    33.33% {margin-left:-100%;}
+    47.5% {margin-left:-100%;}
+    66.66% {margin-left:-200%;}
+    87.5% {margin-left:-200%;}
+    100% {margin-left:0;}
+}
+
+/* 콘텐츠 */
+
+.content {
+    height: 200px;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* 라벨 */
+
+.content .asd {
+    width: 88px;
+    color: #fff;
+    display: block;
+    padding: 6px 0;
+    text-align: center;
+    border-radius: 10px 10px 0 0;
+    background-color: #5383e8;
+}
+
+/* 내용 */
+
+.content .notice {
+    width: 38%;
+}
+
+.content .gal {
+    width: 32%;
+}
+
+.content .bar {
+    width: 29%;
+}
+
+.content .box {
+    height: 167px;
+    padding: 10px;
+    border: 1px solid #000;
+}
+
+/* 공지사항 */
+
+.content .notice a {
+    display: flex;
+    padding: 0 10px;
+    justify-content: space-between;
+}
+
+.content .notice li {
+    line-height: 30px;
+    border-bottom: 1px solid #000;
+}
+
+/* 갤러리 */
+
+.content .gal .box {
+    display: flex;
+    justify-content: space-around;
+}
+
+.content .gal img {
+    border-radius: 10px;
+    height: 130px;
+    width: 32%;
+}
+
+/* 바로가기 */
+
+.content .bar .box {
+    display: flex;
+    justify-content: space-between;
+}
+
+.content .bar .item {
+    width: 32%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    border: 1px solid #afa;
+    border-radius: 10px;
+}
+
+.content img {
+    width: 50px;
+}
+
+/* 푸터 */
+
+footer {
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+footer .sns img {
+    width: 50px;
+}
